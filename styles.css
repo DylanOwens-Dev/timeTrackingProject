@@ -12,14 +12,12 @@ body {
 }
 
 .container {
-    
     width: 60rem;
     height: 30rem;
     display: flex;
     color: white;
     overflow: hidden;
     border-radius: 15px;
-    z-index: -2;
 }
 
 .main-box {
@@ -57,18 +55,26 @@ body {
 .time-frames {
     background-color: hsl(235, 46%, 20%);
     height: 72%;
-    display: block;
-    position: relative;
+    display: flex;
+    flex-direction: column;
     z-index: -1;
     border-radius: 15px;
 }
 
 .time-btns {
-    position: absolute;
+    text-align: left;
+    width: 50%;
     left: 10%;
     bottom: 37.5%;
-    opacity: .5;
+    opacity: .7;
     z-index: 2;
+    color: white;
+    background: none;
+    border: none;
+    font-size: 14px;
+    margin-left: 8%;
+    margin-top: 10px;
+    cursor: pointer;
 }
 
 .time-btns:hover {
@@ -76,15 +82,12 @@ body {
 }
 
 .daily {
-    bottom: 52.5%;
+    margin-top: 30px;
+    z-index: 100;
 }
 
-.daily:hover {
+.active {
     opacity: 1;
-}
-
-.monthly {
-    bottom: 22.5%;
 }
 
 .info-container {
@@ -95,7 +98,7 @@ body {
 }
 
 .info-box {
-    background-color: hsl(235, 46%, 20%);
+    background-color: hsl(43, 84%, 65%);
     width: 30%;
     height: 46.5%;
     margin-bottom: 5%;
@@ -104,6 +107,22 @@ body {
 
 .Work {
     background-color: hsl(15, 100%, 70%);
+}
+
+.Play {
+    background-color: hsl(195, 74%, 62%);
+}
+
+.Study {
+    background-color: hsl(348, 100%, 68%);
+}
+
+.Exercise {
+    background-color: hsl(145, 58%, 55%);
+}
+
+.Social {
+    background-color: hsl(264, 64%, 52%);
 }
 
 .background {
@@ -128,6 +147,13 @@ body {
     position: absolute;
     right: 15px;
     top: 0;
+    opacity: .5;
+    cursor: pointer;
+}
+
+.options:hover {
+    opacity: 1;
+
 }
 
 .stat {
@@ -148,3 +174,8 @@ body {
     position: absolute;
     bottom: 0;
 }
+
+a {
+    color: white;
+}
+
