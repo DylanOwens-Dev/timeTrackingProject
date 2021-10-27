@@ -67,12 +67,8 @@ body {
     position: absolute;
     left: 10%;
     bottom: 37.5%;
-    background: none;
-    color: white;
-    border: none;
-    font-size: 16px;
     opacity: .5;
-    cursor: pointer;
+    z-index: 2;
 }
 
 .time-btns:hover {
@@ -83,6 +79,10 @@ body {
     bottom: 52.5%;
 }
 
+.daily:hover {
+    opacity: 1;
+}
+
 .monthly {
     bottom: 22.5%;
 }
@@ -91,6 +91,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 75%;
 }
 
 .info-box {
@@ -101,7 +102,7 @@ body {
     border-radius: 15px;
 }
 
-.work {
+.Work {
     background-color: hsl(15, 100%, 70%);
 }
 
